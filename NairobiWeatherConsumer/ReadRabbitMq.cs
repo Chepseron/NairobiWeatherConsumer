@@ -17,22 +17,21 @@ namespace NairobiWeatherConsumer
         static void Main(string[] args)
         {
             try {
+                //the factory declaration to match with the credentials used by Rabbit MQ (default being username:guest password:guest)
                 var factory = new ConnectionFactory() { Uri = new Uri("amqp://guest:guest@localhost:5672/host") };
                 using (var connection = factory.CreateConnection())
                 using (var channel = connection.CreateModel())
                 {
-                    channel.QueueDeclare(queue: "Weather",
-                                     durable: false,
-                                     exclusive: false,
-                                     autoDelete: false,
-                                     arguments: null);
-
+                    //ensure you are consuming from an exchange to match with the java application
+                    channel.ExchangeDeclare("logs", ExchangeType.Fanout);
                     var consumer = new EventingBasicConsumer(channel);
                     consumer.Received += (model, ea) =>
                     {
                         var body = ea.Body.ToArray();
                         var message = Encoding.UTF8.GetString(body);
                   //      Console.WriteLine(" [x] Received {0}", message);
+
+                        //log the message received on your log directory
                         WriteLog(message);
                     };
                     channel.BasicConsume(queue: "Weather",
@@ -43,6 +42,7 @@ namespace NairobiWeatherConsumer
             }
             catch(Exception ex)
             {
+                //log your error ess
                 WriteLog(ex.Message);
             }
         }
