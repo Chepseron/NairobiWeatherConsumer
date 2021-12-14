@@ -1,0 +1,15 @@
+C:\Users\Anonymous\Documents\NetBeansProjects\NairobiWeatherConsumer\NairobiWeatherConsumer\bin\Debug\NairobiWeatherConsumer.exe.config
+C:\Users\Anonymous\Documents\NetBeansProjects\NairobiWeatherConsumer\NairobiWeatherConsumer\obj\Debug\NairobiWeatherConsumer.csprojResolveAssemblyReference.cache
+C:\Users\Anonymous\Documents\NetBeansProjects\NairobiWeatherConsumer\NairobiWeatherConsumer\bin\Debug\NairobiWeatherConsumer.exe
+C:\Users\Anonymous\Documents\NetBeansProjects\NairobiWeatherConsumer\NairobiWeatherConsumer\bin\Debug\NairobiWeatherConsumer.pdb
+C:\Users\Anonymous\Documents\NetBeansProjects\NairobiWeatherConsumer\NairobiWeatherConsumer\bin\Debug\RabbitMQ.Client.dll
+C:\Users\Anonymous\Documents\NetBeansProjects\NairobiWeatherConsumer\NairobiWeatherConsumer\bin\Debug\System.Buffers.dll
+C:\Users\Anonymous\Documents\NetBeansProjects\NairobiWeatherConsumer\NairobiWeatherConsumer\bin\Debug\System.Memory.dll
+C:\Users\Anonymous\Documents\NetBeansProjects\NairobiWeatherConsumer\NairobiWeatherConsumer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Anonymous\Documents\NetBeansProjects\NairobiWeatherConsumer\NairobiWeatherConsumer\bin\Debug\RabbitMQ.Client.pdb
+C:\Users\Anonymous\Documents\NetBeansProjects\NairobiWeatherConsumer\NairobiWeatherConsumer\bin\Debug\RabbitMQ.Client.xml
+C:\Users\Anonymous\Documents\NetBeansProjects\NairobiWeatherConsumer\NairobiWeatherConsumer\bin\Debug\System.Buffers.xml
+C:\Users\Anonymous\Documents\NetBeansProjects\NairobiWeatherConsumer\NairobiWeatherConsumer\bin\Debug\System.Memory.xml
+C:\Users\Anonymous\Documents\NetBeansProjects\NairobiWeatherConsumer\NairobiWeatherConsumer\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Anonymous\Documents\NetBeansProjects\NairobiWeatherConsumer\NairobiWeatherConsumer\obj\Debug\NairobiWeatherConsumer.exe
+C:\Users\Anonymous\Documents\NetBeansProjects\NairobiWeatherConsumer\NairobiWeatherConsumer\obj\Debug\NairobiWeatherConsumer.pdb
