@@ -49,7 +49,7 @@ namespace NairobiWeatherConsumer
 
         public static void WriteLog(string content)
         {
-            //this logs to the execution path of the application in this case the debug folder
+            //this logs to the execution path of the application. in this case the debug folder under the application directory
             string appPath = System.AppContext.BaseDirectory;
             StreamWriter log;
             FileStream fileStream = null;
