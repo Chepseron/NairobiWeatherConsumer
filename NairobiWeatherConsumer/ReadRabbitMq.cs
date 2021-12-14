@@ -53,21 +53,21 @@ namespace NairobiWeatherConsumer
             string appPath = System.AppContext.BaseDirectory;
             StreamWriter log;
             FileStream fileStream = null;
-            DirectoryInfo logDirInfo = null;
-            FileInfo logFileInfo;
+            DirectoryInfo fullDirPath = null;
+            FileInfo fileInfo;
 
-            string logFilePath = appPath+"Logs\\";
-            logFilePath = logFilePath + "Log-" + System.DateTime.Today.ToString("MM-dd-yyyy") + "." + "txt";
-            logFileInfo = new FileInfo(logFilePath);
-            logDirInfo = new DirectoryInfo(logFileInfo.DirectoryName);
-            if (!logDirInfo.Exists) logDirInfo.Create();
-            if (!logFileInfo.Exists)
+            string filePath = appPath+"Logs\\";
+            filePath = filePath + "Log-" + System.DateTime.Today.ToString("MM-dd-yyyy") + "." + "txt";
+            fileInfo = new FileInfo(filePath);
+            fullDirPath = new DirectoryInfo(fileInfo.DirectoryName);
+            if (!fullDirPath.Exists) fullDirPath.Create();
+            if (!fileInfo.Exists)
             {
-                fileStream = logFileInfo.Create();
+                fileStream = fileInfo.Create();
             }
             else
             {
-                fileStream = new FileStream(logFilePath, FileMode.Append);
+                fileStream = new FileStream(filePath, FileMode.Append);
             }
             log = new StreamWriter(fileStream);
             log.WriteLine(content);
